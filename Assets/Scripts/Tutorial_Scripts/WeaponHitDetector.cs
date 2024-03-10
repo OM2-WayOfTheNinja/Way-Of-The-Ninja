@@ -25,6 +25,8 @@ public class WeaponHitDetector : MonoBehaviour
             enemy.RWeaponDeflected();
             other.gameObject.tag = untaggedTag;
 
+            //add sound when deflecting a ninja star
+            GetComponent<AudioSource>().Play();
         }
     }
     IEnumerator CoolDown()

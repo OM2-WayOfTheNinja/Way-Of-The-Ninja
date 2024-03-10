@@ -116,6 +116,7 @@ Transform:
   - {fileID: 7871352368382026820}
   - {fileID: 1487201061646765461}
   - {fileID: 4208477542730566554}
+  - {fileID: 6269540866215511501}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3228262723880886828
@@ -892,6 +893,98 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 469502, guid: 04c36f15bbecd854cab50deedb5c594f, type: 3}
   m_PrefabInstance: {fileID: 3380503949882478334}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3391170184209936533
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8941359255885431260}
+    m_Modifications:
+    - target: {fileID: 4807913543172530525, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_Name
+      value: instruction sign
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429371231647768039, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_text
+      value: 'Dojo training area
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429371231647768039, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_fontSize
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429371231647768039, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650915035635823960, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.0054923
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650915035635823960, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0054923
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650915035635823960, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0054923
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650915035635823960, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -79.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650915035635823960, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -15.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650915035635823960, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -256.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650915035635823960, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.2590407
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650915035635823960, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.2590407
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650915035635823960, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6579498
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650915035635823960, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.6579498
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650915035635823960, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650915035635823960, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 137.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650915035635823960, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650915035635823960, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+--- !u!4 &6269540866215511501 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8650915035635823960, guid: 8b1f3e3e887b0ec44899a16292974317, type: 3}
+  m_PrefabInstance: {fileID: 3391170184209936533}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3620970825491609422
 PrefabInstance:

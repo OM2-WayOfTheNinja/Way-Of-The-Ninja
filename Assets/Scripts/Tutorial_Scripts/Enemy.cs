@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] float knockback = -50f;
     [SerializeField] Animator animator;
     [SerializeField] Animation anim;
+    [SerializeField] AudioClip takenDmgAudio;
+    [SerializeField] AudioClip hadDiedAudio;
    // [SerializeField] string animatorLayerName = "Base Layer";
     // Start is called before the first frame update
     void Start()
@@ -45,6 +47,8 @@ public class Enemy : MonoBehaviour
             var colliders = GetComponents<Collider>();
             colliders[0].enabled = false;
             this.StartCoroutine(CoolDown());
+
+            PlayAudio(takenDmgAudio);
         }
 
         if (other.gameObject.CompareTag(rangedWeaponTag))
@@ -52,6 +56,8 @@ public class Enemy : MonoBehaviour
             Debug.Log("RWeapon has wounded enemy");
             ReduceHealth();
             other.gameObject.tag = untaggedTag;
+            PlayAudio(takenDmgAudio);
+        
         }
     }
     public IEnumerator CoolDown()
@@ -124,4 +130,11 @@ public class Enemy : MonoBehaviour
 
 
     public bool getIsEnemyKilled() { return isEnemyKilled; }
+    void PlayAudio(AudioClip ac) 
+    {
+            //playing wounding sound:
+            AudioSource as1 = GetComponent<AudioSource>();
+            as1.clip = ac;
+            as1.Play();
+    }
 }

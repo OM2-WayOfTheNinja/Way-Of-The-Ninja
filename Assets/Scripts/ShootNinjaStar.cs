@@ -17,7 +17,7 @@ public class ShootNinjaStar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        UpdateText();   
     }
 
     public void AddStars(int number) 
@@ -43,7 +43,7 @@ public class ShootNinjaStar : MonoBehaviour
         }
     }
 
-private void UpdateText()
+    public void UpdateText()
     {
         text.text = textString + starsAmount;
     }

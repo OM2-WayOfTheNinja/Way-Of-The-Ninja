@@ -11,10 +11,14 @@ public class StarShootMover : MonoBehaviour
     [SerializeField] ForceMode torqueMode = ForceMode.Force;
 
     [SerializeField] GameObject crossHair;
+    [SerializeField] AudioClip[] throwSounds;
 
     private Rigidbody rb;
     void Start()
     {
+        AudioSource as1 = GetComponent<AudioSource>();
+        as1.clip = throwSounds[Random.Range(0, throwSounds.Length)];
+        as1.Play();
         rb = GetComponent<Rigidbody>();
 
         //shoots the ninja star towards the player's position

@@ -8,6 +8,8 @@ public class HealthManager : MonoBehaviour
     [SerializeField] TextMeshPro text;
     [SerializeField] string textString = "Health: ";
     [SerializeField] int healthPoints = 5;
+    [SerializeField] bool isReducingHealth = false;
+    [SerializeField] float rhCooldown = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,13 +29,22 @@ public class HealthManager : MonoBehaviour
     }
     public void ReduceHealth(int amount)
     {
+        if (isReducingHealth == true)
+        {
+            return;
+        }
         healthPoints = Mathf.Max(healthPoints - amount, 0);
         if (healthPoints <= 0)
         {
             manager.HealthReachedZero();
         }
         UpdateText();
+        isReducingHealth = true;
+        StartCoroutine(ReduceHealthCooldown());
         StartCoroutine(DamagePlayerVisuals());
+
+        //sound when hit:
+        GetComponent<AudioSource>().Play();
     }
     private void UpdateText()
     {
@@ -48,5 +59,10 @@ public class HealthManager : MonoBehaviour
         yield return new WaitForSeconds(dmgPlayerVisualsTime);
         dmgPlayerVisuals.SetActive(false);
 
+    }
+    IEnumerator ReduceHealthCooldown() 
+    {
+        yield return new WaitForSeconds(rhCooldown);
+        isReducingHealth = false;
     }
 }

@@ -55,6 +55,7 @@ public class RestoreNinjaStar : MonoBehaviour
         var dur = NSParticles.duration;
 
         em.enabled = true;
+        GetComponent<AudioSource>().Play();
         NSParticles.Play();
         yield return new WaitForSeconds(dur);
         gameObject.SetActive(false);

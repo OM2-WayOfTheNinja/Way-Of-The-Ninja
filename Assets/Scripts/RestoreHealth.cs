@@ -55,6 +55,7 @@ public class RestoreHealth : MonoBehaviour
         var dur = heartsParticles.duration;
 
         em.enabled = true;
+        GetComponent<AudioSource>().Play();
         heartsParticles.Play();
         yield return new WaitForSeconds(dur);
         gameObject.SetActive(false);

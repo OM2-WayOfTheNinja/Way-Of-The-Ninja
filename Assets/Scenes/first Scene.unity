@@ -12400,6 +12400,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5538382492397948730, guid: bb34572905443624599aba6f05b77148, type: 3}
+      propertyPath: m_text
+      value: "Use the W A S D keys to move, \nPress SPACEBAR to jump,\nHold LEFT
+        SHIFT to run,\nMove the mouse to look around.\nPress TAB to change settings
+        \nor return Menu\n\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5538382492397948730, guid: bb34572905443624599aba6f05b77148, type: 3}
+      propertyPath: m_fontSize
+      value: 31.25
+      objectReference: {fileID: 0}
     - target: {fileID: 5619621392120662186, guid: bb34572905443624599aba6f05b77148, type: 3}
       propertyPath: m_CullTransparentMesh
       value: 1
@@ -16087,6 +16097,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2787073807822950855, guid: 9a2e6540e4efb894182f489cc754b4e1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 5545563270880887908, guid: 9a2e6540e4efb894182f489cc754b4e1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 9a2e6540e4efb894182f489cc754b4e1, type: 3}
 --- !u!1001 &4662294199941192389
 PrefabInstance:
@@ -18771,6 +18784,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 666540562}
     m_Modifications:
+    - target: {fileID: 243028683526479231, guid: 98bd4ea5e155e67469ac7eb3f5d9df68, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1881840513101313313, guid: 98bd4ea5e155e67469ac7eb3f5d9df68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -18814,6 +18831,10 @@ PrefabInstance:
     - target: {fileID: 3361209578019281353, guid: 98bd4ea5e155e67469ac7eb3f5d9df68, type: 3}
       propertyPath: m_Name
       value: temple body
+      objectReference: {fileID: 0}
+    - target: {fileID: 6899212345454414719, guid: 98bd4ea5e155e67469ac7eb3f5d9df68, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

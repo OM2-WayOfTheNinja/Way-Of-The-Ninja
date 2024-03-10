@@ -12,9 +12,17 @@ public class Mover : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] Vector3 offset;
 
+    [SerializeField] AudioClip[] throwSounds;
+
+
     private Rigidbody rb;
     void Start()
     {
+
+        AudioSource as1 = GetComponent<AudioSource>();
+        as1.clip = throwSounds[Random.Range(0, throwSounds.Length)];
+        as1.Play();
+
         rb = GetComponent<Rigidbody>();
 
         //shoots the ninja star towards the player's position
