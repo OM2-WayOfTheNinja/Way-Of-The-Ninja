@@ -12,6 +12,10 @@ public class NotifyStarHit : MonoBehaviour
     {
         if (other.gameObject.tag == weaponTag) 
         {
+            if (other.isTrigger) // the sword has 2 colliers, the trigger is for sparks, so this is for avoiding double counting 
+            {
+                return;
+            }
             Debug.Log("stars has clashed");
             deflectionDetector.DeflectDetected();
             var colliders = GetComponents<BoxCollider>();

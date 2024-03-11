@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2163362619105837037}
   - component: {fileID: 7772172778088500968}
-  - component: {fileID: 3615857325310729387}
+  - component: {fileID: 5971623354581989091}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -55,7 +55,7 @@ MonoBehaviour:
     m_SingletonActionBindings: []
     m_Flags: 0
   retryScene: Tutorial
---- !u!114 &3615857325310729387
+--- !u!114 &5971623354581989091
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,18 +64,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 215959615130246755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fe11a0bf58cb434a8d2fe52e9ab69b3, type: 3}
+  m_Script: {fileID: 11500000, guid: b03c4a6726a7c9841bfc68a76af48909, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  events:
-  - {fileID: 0}
-  - {fileID: 0}
+  events: []
   currEvent: 0
   isCurrEventFinishedRunning: 0
-  bambooDetector: {fileID: 0}
-  starsDetector: {fileID: 0}
-  bambooDeSpawnTime: 2
-  starsSpawnTime: 1
-  texts: []
   gameOverSceneName: GameOverScene
-  MenuSceneName: Menu
+  level_2_name: Tutorial

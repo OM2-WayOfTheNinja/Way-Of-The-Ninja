@@ -13,7 +13,7 @@ public class TManager : EventsManager
     [SerializeField] float starsSpawnTime = 1;
     [SerializeField] TextMeshPro[] texts;
 
-    [SerializeField] string gameOverSceneName = "game over";
+    //[SerializeField] string gameOverSceneName = "game over";
     [SerializeField] string MenuSceneName = "Menu";
      private GameObject popup = null;
     [SerializeField] bool WEDONTNEEDAPOPUPHERE = false;
@@ -79,14 +79,14 @@ public class TManager : EventsManager
     }
 
 
-    public void HealthReachedZero()
-    {
-        GameOver();
-    }
-    private void GameOver()
-    {
-       SceneManager.LoadScene(gameOverSceneName);    // Input can either be a serial number or a name; here we use name.
-    }
+    // public void HealthReachedZero()
+    // {
+    //     GameOver();
+    // }
+    // private void GameOver()
+    // {
+    //    SceneManager.LoadScene(gameOverSceneName);    // Input can either be a serial number or a name; here we use name.
+    // }
 
     protected override IEnumerator FinishEvents()
     {

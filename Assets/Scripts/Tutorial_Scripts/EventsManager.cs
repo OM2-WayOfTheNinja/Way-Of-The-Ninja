@@ -9,6 +9,8 @@ public abstract class EventsManager : MonoBehaviour
     [SerializeField] protected Event[] events;
     [SerializeField] protected int currEvent = 0;
     [SerializeField] protected bool isCurrEventFinishedRunning = false;
+    [SerializeField] string gameOverSceneName = "GameOverScene";
+
 
     public bool GetIsCurrEventFinishedRunning() { return isCurrEventFinishedRunning;}
 
@@ -106,5 +108,14 @@ public abstract class EventsManager : MonoBehaviour
         yield return new WaitForSeconds(currStartTime);
         Debug.Log("exiting WaitForCurrEventStart");
 
+    }
+
+    public void HealthReachedZero()
+    {
+        GameOver();
+    }
+     private void GameOver()
+    {
+       SceneManager.LoadScene(gameOverSceneName);    // Input can either be a serial number or a name; here we use name.
     }
 }

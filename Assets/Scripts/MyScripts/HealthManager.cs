@@ -1,10 +1,11 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
-    [SerializeField] TManager manager;
+    [SerializeField] EventsManager manager;
     [SerializeField] TextMeshPro text;
     [SerializeField] string textString = "Health: ";
     [SerializeField] int healthPoints = 5;
