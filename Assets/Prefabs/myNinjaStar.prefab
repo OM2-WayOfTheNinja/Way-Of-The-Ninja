@@ -119,6 +119,8 @@ MonoBehaviour:
   torqueSize: 50
   torqueMode: 0
   player: {fileID: 0}
+  offset: {x: 0, y: 0, z: 0}
+  throwSounds: []
 --- !u!65 &8196891160955194015
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -236,6 +238,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 323e902b9de68e946ac00c5a3450bf95, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 838a5536492b02143aaef27ce7020c02, type: 2}
     - target: {fileID: 919132149155446097, guid: 323e902b9de68e946ac00c5a3450bf95, type: 3}
       propertyPath: m_Name
       value: myNinjaStar_w_hole
