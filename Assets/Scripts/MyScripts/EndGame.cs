@@ -33,4 +33,14 @@ public class EndGame : MonoBehaviour
 
         }
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void RetryGame()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
