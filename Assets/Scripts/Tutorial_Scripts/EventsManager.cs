@@ -72,6 +72,7 @@ public abstract class EventsManager : MonoBehaviour
         if (currEvent < events.Length && events[currEvent] != null) 
         {
             Debug.Log("turning on next event");
+            events[currEvent].setCalledIsFinished(false);
             events[currEvent].gameObject.SetActive(true);
         }
         else //reached final event 

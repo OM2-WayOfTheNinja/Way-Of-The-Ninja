@@ -31623,7 +31623,7 @@ MonoBehaviour:
   bambooDeSpawnTime: 2
   starsSpawnTime: 1
   texts: []
-  MenuSceneName: level 1
+  MenuSceneName: DramaticScene_1
   WEDONTNEEDAPOPUPHERE: 1
 --- !u!114 &1621548668 stripped
 MonoBehaviour:
@@ -54435,8 +54435,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5866097942352776192, guid: f2051cd644492474eab032e86bc37c87, type: 3}
+      propertyPath: showCursor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866097942352776192, guid: f2051cd644492474eab032e86bc37c87, type: 3}
       propertyPath: sensitivity
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866097942352776192, guid: f2051cd644492474eab032e86bc37c87, type: 3}
+      propertyPath: xSpeedFactor
+      value: 0.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866097942352776192, guid: f2051cd644492474eab032e86bc37c87, type: 3}
+      propertyPath: ySpeedFactor
+      value: 0.03125
       objectReference: {fileID: 0}
     - target: {fileID: 5903563338794390290, guid: f2051cd644492474eab032e86bc37c87, type: 3}
       propertyPath: m_LocalScale.x
@@ -54494,6 +54506,14 @@ PrefabInstance:
       propertyPath: swordHitParticlesPrefab
       value: 
       objectReference: {fileID: 1970028041}
+    - target: {fileID: 7694700778286433472, guid: f2051cd644492474eab032e86bc37c87, type: 3}
+      propertyPath: xSpeedFactor
+      value: 0.015625
+      objectReference: {fileID: 0}
+    - target: {fileID: 7694700778286433472, guid: f2051cd644492474eab032e86bc37c87, type: 3}
+      propertyPath: ySpeedFactor
+      value: 0.015625
+      objectReference: {fileID: 0}
     - target: {fileID: 7947422143984037737, guid: f2051cd644492474eab032e86bc37c87, type: 3}
       propertyPath: m_Constraints
       value: 126
@@ -54514,9 +54534,21 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8139273030473374732, guid: f2051cd644492474eab032e86bc37c87, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 8766592636150498036}
     - target: {fileID: 8695404743112530264, guid: f2051cd644492474eab032e86bc37c87, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695404743112530264, guid: f2051cd644492474eab032e86bc37c87, type: 3}
+      propertyPath: lookUpBound
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695404743112530264, guid: f2051cd644492474eab032e86bc37c87, type: 3}
+      propertyPath: lookDownBound
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 8695404743112530264, guid: f2051cd644492474eab032e86bc37c87, type: 3}
       propertyPath: sensitivityBar
@@ -54524,7 +54556,7 @@ PrefabInstance:
       objectReference: {fileID: 907552104}
     - target: {fileID: 8695404743112530264, guid: f2051cd644492474eab032e86bc37c87, type: 3}
       propertyPath: mouseSensitivity
-      value: 5
+      value: 0.125
       objectReference: {fileID: 0}
     - target: {fileID: 8908845867648043625, guid: f2051cd644492474eab032e86bc37c87, type: 3}
       propertyPath: m_Name
@@ -54566,6 +54598,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: f2051cd644492474eab032e86bc37c87, type: 3}
+--- !u!82 &8766592636150498036 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 746719099713752131, guid: f2051cd644492474eab032e86bc37c87, type: 3}
+  m_PrefabInstance: {fileID: 8766592636150498035}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

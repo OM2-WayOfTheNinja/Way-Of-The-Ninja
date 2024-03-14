@@ -711,7 +711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 781add679b1291a419d06be5e33f367a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TutorialLevelName: First Scene
+  TutorialLevelName: DramaticScene_0
 --- !u!114 &114502446
 MonoBehaviour:
   m_ObjectHideFlags: 0

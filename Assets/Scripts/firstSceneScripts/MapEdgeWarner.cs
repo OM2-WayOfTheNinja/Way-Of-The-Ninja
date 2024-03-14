@@ -30,7 +30,7 @@ public class MapEdgeWarner : MonoBehaviour
             StartCoroutine(WaitForCooldown());
         }
     }
-    IEnumerator WaitForCooldown() 
+    public IEnumerator WaitForCooldown() 
     {
         yield return new WaitForSeconds(warningTime);
             warningText.gameObject.SetActive(false);

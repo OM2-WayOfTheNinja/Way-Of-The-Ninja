@@ -39,8 +39,8 @@ public class MoveCursorObject : MonoBehaviour
         Cursor.visible = showCursor;
 
         mouseMovement = Mouse.current.delta.ReadValue();
-        updatedY += mouseMovement.y * Time.deltaTime * ySpeedFactor;
-        updatedX += mouseMovement.x * Time.deltaTime * xSpeedFactor;
+        updatedY += mouseMovement.y * ySpeedFactor; // * Time.deltaTime
+        updatedX += mouseMovement.x * xSpeedFactor; // * Time.deltaTime
         if (Mathf.Abs(updatedY) > maxYDistance)
         {
             if (updatedY < 0) updatedY = -maxYDistance;

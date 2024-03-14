@@ -32,4 +32,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/level 1.unity
     guid: 68a5a9f47b36cd549a58ed57aaead041
+  - enabled: 1
+    path: Assets/Scenes/DramaticScene_0.unity
+    guid: 478f337a1917a514c85b06d9154f22bb
+  - enabled: 1
+    path: Assets/Scenes/DramaticScene_1.unity
+    guid: d5312b670ea4d3b4f9f5925948547842
+  - enabled: 1
+    path: Assets/Scenes/DramaticScene_2.unity
+    guid: 476248e64f02a0a40b75cb525acd2148
+  - enabled: 1
+    path: Assets/Scenes/DramaticScene_1.5.unity
+    guid: 6435e0840084f9f4e8b1704476e7d80e
   m_configObjects: {}

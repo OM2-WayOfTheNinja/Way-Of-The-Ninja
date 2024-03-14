@@ -8,6 +8,7 @@ public class MakeSoundOnWeaponImpact : MonoBehaviour
     [SerializeField] string enemyRWeaponTag = "enemyRWeapon";
     [SerializeField] AudioClip[] starsClashSounds;
     [SerializeField] AudioClip[] swordsClashSounds;
+    [SerializeField] AudioSource audioSource;
      private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag(enemyWeaponTag) ) 
@@ -23,10 +24,10 @@ public class MakeSoundOnWeaponImpact : MonoBehaviour
 
     void playSounds(AudioClip[] ac) 
     {
-        AudioSource as1 = GetComponent<AudioSource>();
-        if (as1.isPlaying) return;
-        as1.clip = ac[Random.Range(0, ac.Length)];
-        as1.Play();
+       // AudioSource as1 = GetComponent<AudioSource>();
+        if (audioSource.isPlaying) return;
+        audioSource.clip = ac[Random.Range(0, ac.Length)];
+        audioSource.Play();
     }
     // Start is called before the first frame update
     void Start()

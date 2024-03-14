@@ -9,6 +9,7 @@ public class CameraRotation : MonoBehaviour
     [SerializeField] float xRotation, yRotation;
     [SerializeField] float mouseSensitivity = 5;
     [SerializeField] Slider sensitivityBar;
+    [SerializeField] float lookUpBound = 90,lookDownBound = -90;
 
 
     // Start is called before the first frame update
@@ -20,12 +21,12 @@ public class CameraRotation : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate() //Update()
     {
         mouseMovement = Mouse.current.delta.ReadValue();
-        xRotation += mouseMovement.y * mouseSensitivity * sensitivityBar.value * Time.deltaTime ;
-        xRotation = Mathf.Clamp(xRotation, -90, 90);
-        yRotation += mouseMovement.x * mouseSensitivity * sensitivityBar.value * Time.deltaTime;
+        xRotation += mouseMovement.y * mouseSensitivity * sensitivityBar.value; // * Time.deltaTime ;
+        xRotation = Mathf.Clamp(xRotation, lookDownBound, lookUpBound);
+        yRotation += mouseMovement.x * mouseSensitivity * sensitivityBar.value;  //* Time.deltaTime;
         yRotation = yRotation % 360;
         transform.rotation = Quaternion.Euler(-xRotation, yRotation, 0);
         player.transform.rotation = Quaternion.Euler(0, yRotation, 0);

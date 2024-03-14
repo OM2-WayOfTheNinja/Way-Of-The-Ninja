@@ -38,4 +38,9 @@ public abstract class Event : MonoBehaviour
     {
         return finishTime;
     }
+
+    public void setCalledIsFinished(bool value) 
+    {
+        calledIsFinished = value;
+    }
 }

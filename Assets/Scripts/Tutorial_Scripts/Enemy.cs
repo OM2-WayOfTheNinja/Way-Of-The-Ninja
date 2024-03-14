@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject deadEnemySkinPrefab;
     [SerializeField] bool isEnemyKilled = false;
     [SerializeField] bool isInCooldown = false;
-    [SerializeField] int enemyHealthPoints = 5;
+    [SerializeField] protected int enemyHealthPoints = 5;
     [SerializeField] CharacterController player;
     [SerializeField] float knockback = -50f;
     [SerializeField] Animator animator;

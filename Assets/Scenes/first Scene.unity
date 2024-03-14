@@ -1467,12 +1467,12 @@ MonoBehaviour:
   events: []
   currEvent: 0
   isCurrEventFinishedRunning: 0
+  gameOverSceneName: game over
   bambooDetector: {fileID: 0}
   starsDetector: {fileID: 0}
   bambooDeSpawnTime: 2
   starsSpawnTime: 1
   texts: []
-  gameOverSceneName: game over
   MenuSceneName: Menu
   WEDONTNEEDAPOPUPHERE: 0
 --- !u!4 &170782481 stripped
@@ -12286,14 +12286,34 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5866097942352776192, guid: f2051cd644492474eab032e86bc37c87, type: 3}
+      propertyPath: xSpeedFactor
+      value: 0.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866097942352776192, guid: f2051cd644492474eab032e86bc37c87, type: 3}
+      propertyPath: ySpeedFactor
+      value: 0.03125
+      objectReference: {fileID: 0}
     - target: {fileID: 6795195534162275788, guid: f2051cd644492474eab032e86bc37c87, type: 3}
       propertyPath: far clip plane
       value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7694700778286433472, guid: f2051cd644492474eab032e86bc37c87, type: 3}
+      propertyPath: xSpeedFactor
+      value: 0.015625
+      objectReference: {fileID: 0}
+    - target: {fileID: 7694700778286433472, guid: f2051cd644492474eab032e86bc37c87, type: 3}
+      propertyPath: ySpeedFactor
+      value: 0.015625
       objectReference: {fileID: 0}
     - target: {fileID: 8695404743112530264, guid: f2051cd644492474eab032e86bc37c87, type: 3}
       propertyPath: sensitivityBar
       value: 
       objectReference: {fileID: 891522254}
+    - target: {fileID: 8695404743112530264, guid: f2051cd644492474eab032e86bc37c87, type: 3}
+      propertyPath: mouseSensitivity
+      value: 0.125
+      objectReference: {fileID: 0}
     - target: {fileID: 8908845867648043625, guid: f2051cd644492474eab032e86bc37c87, type: 3}
       propertyPath: m_Name
       value: Player_and_camera
