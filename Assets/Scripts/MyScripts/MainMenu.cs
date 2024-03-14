@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] string TutorialLevelName = "Tutorial";
+    [SerializeField] GameObject levelSelect;
 
     private void Start()
     {
@@ -13,8 +14,9 @@ public class MainMenu : MonoBehaviour
     }
     public void PlayGame()
     {
-        SceneManager.LoadScene(TutorialLevelName);
+        levelSelect.SetActive(true);
     }
+
 
     public void QuitGame()
     {

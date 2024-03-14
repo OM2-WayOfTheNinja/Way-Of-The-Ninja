@@ -17,13 +17,13 @@ public class TManager : EventsManager
     [SerializeField] string MenuSceneName = "Menu";
      private GameObject popup = null;
     [SerializeField] bool WEDONTNEEDAPOPUPHERE = false;
-     
-  
 
+    
+     
     // Start is called before the first frame update
     void Start()
     {
-            popup = GameObject.Find("GameplayPopup");
+        popup = GameObject.Find("GameplayPopup");
         popup.SetActive(false);
         if (!WEDONTNEEDAPOPUPHERE)
         {
@@ -34,11 +34,18 @@ public class TManager : EventsManager
         }
         
     
+    
+       
+
+
+
+
        
 
 
 
         StartEvents();
+       
     }
 
     // Update is called once per frame
@@ -77,6 +84,8 @@ public class TManager : EventsManager
             SceneManager.LoadScene(MenuSceneName);
         }
     }
+
+    
 
 
     // public void HealthReachedZero()
