@@ -1,7 +1,7 @@
 # Way-Of-The-Ninja
 
 Get ready, action is coming <br/>
-Itch.io link: [Click here for the trailer](https://www.youtube.com/watch?v=1AeTdIhtIBE) <br/><br/>
+Trailer link: [Click here for the trailer](https://www.youtube.com/watch?v=1AeTdIhtIBE) <br/><br/>
 Itch.io link: [Click here to play](https://gamedevcourseorelandmaor.itch.io/way-of-the-ninja) <br/><br/>
 מפרט מחשב מומלץ להרצת המשחק:
 <br/>
