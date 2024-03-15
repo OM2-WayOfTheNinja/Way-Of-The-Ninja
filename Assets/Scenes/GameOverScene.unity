@@ -612,7 +612,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 188, y: -89}
+  m_AnchoredPosition: {x: 409, y: -89}
   m_SizeDelta: {x: 589.5486, y: 51.0881}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &906530476
@@ -635,11 +635,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Or
+  m_text: 'Or press Esc to exit
 
-    press Esc to exit
-
-    press Spacebar to retry'
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 34a4a0c89db9414489be1315c76bc9f1, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 747390e5fc076dc4d8ce542a220283e7, type: 2}
@@ -1060,6 +1058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1268484498}
   - component: {fileID: 1268484497}
+  - component: {fileID: 1268484499}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -1096,7 +1095,7 @@ MonoBehaviour:
       m_Action: Retry Button
       m_Flags: 0
     m_Flags: 0
-  retryScene: MainMenu
+  menuSceneName: MainMenu
 --- !u!4 &1268484498
 Transform:
   m_ObjectHideFlags: 0
@@ -1112,6 +1111,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1268484499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268484496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a728eaa90cfd88d4387301e18dcc2737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1378292811
 GameObject:
   m_ObjectHideFlags: 0

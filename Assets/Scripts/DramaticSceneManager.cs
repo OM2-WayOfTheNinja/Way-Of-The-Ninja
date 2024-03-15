@@ -44,6 +44,11 @@ public class DramaticSceneManager : MonoBehaviour
 
     public void SkipVideo() 
     {
+        if (!cooldown)
+        {
+            return;
+        }
         SceneManager.LoadScene(nextScene);
     }
+
 }

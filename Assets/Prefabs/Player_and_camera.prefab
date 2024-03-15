@@ -4278,6 +4278,8 @@ MonoBehaviour:
   yRotation: 0
   mouseSensitivity: 10
   sensitivityBar: {fileID: 8463823547867540512}
+  lookUpBound: 90
+  lookDownBound: -90
 --- !u!114 &3229264372689565148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5292,7 +5294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4012945576974763587, guid: b8c7ee938df4ac04c8bd398921f55359, type: 3}
       propertyPath: throwSounds.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4012945576974763587, guid: b8c7ee938df4ac04c8bd398921f55359, type: 3}
       propertyPath: throwSounds.Array.data[0]
@@ -5855,6 +5857,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6586d544d17218943bdee661433bb850, type: 3}
   swordsClashSounds:
   - {fileID: 8300000, guid: 3250079f8e40b3d4bb9d080b0c66d3f5, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1001 &8647808091979298825
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -581,6 +581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TutorialLevelName: First Scene
+  levelSelect: {fileID: 0}
 --- !u!114 &114502446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -602,7 +603,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
-  retryScene: Tutorial
+  menuSceneName: MainMenu
 --- !u!328 &114502447
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -653,7 +654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vp: {fileID: 1608780175}
   cooldown: 0
-  waitForCooldown: 1
+  waitForCooldown: 3
   nextScene: DramaticScene_2
 --- !u!1 &415739480
 GameObject:

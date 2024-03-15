@@ -12,6 +12,7 @@ public class PauseMenuController : MonoBehaviour
     [SerializeField] GameObject cam;
     [SerializeField] GameObject weapon;
     [SerializeField] bool isWeaponEnabledThisScene;
+    [SerializeField] string mainMenuName = "MainMenu";
 
 
     bool m_paused = false;
@@ -72,6 +73,6 @@ public class PauseMenuController : MonoBehaviour
     public void ExitToMainOnClick()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(mainMenuName);
     }
 }

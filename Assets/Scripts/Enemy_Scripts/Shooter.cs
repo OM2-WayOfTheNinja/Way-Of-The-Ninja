@@ -34,7 +34,7 @@ public class Shooter: MonoBehaviour {
         private void OnEnable()
     {
         ninjaStarSpawner.SetActive(true);
-        navMeshAgent.SetDestination(this.transform.position);
+        //navMeshAgent.SetDestination(this.transform.position);
         
         animator.Play("Base Layer.idle");
     }

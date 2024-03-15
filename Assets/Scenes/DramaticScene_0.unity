@@ -581,6 +581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TutorialLevelName: First Scene
+  levelSelect: {fileID: 0}
 --- !u!114 &114502446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,7 +655,7 @@ MonoBehaviour:
   vp: {fileID: 1608780175}
   cooldown: 0
   waitForCooldown: 1
-  nextScene: First Scene
+  nextScene: first Scene
 --- !u!1 &415739480
 GameObject:
   m_ObjectHideFlags: 0

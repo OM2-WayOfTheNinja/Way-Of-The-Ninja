@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] TextMeshPro healthGui;
+    [SerializeField] protected TextMeshPro healthGui;
     [SerializeField] GameObject deadEnemySkinPrefab;
     [SerializeField] bool isEnemyKilled = false;
     [SerializeField] bool isInCooldown = false;
@@ -130,6 +130,7 @@ public class Enemy : MonoBehaviour
 
 
     public bool getIsEnemyKilled() { return isEnemyKilled; }
+    public int getEnemyHP() { return enemyHealthPoints; }
     void PlayAudio(AudioClip ac) 
     {
             //playing wounding sound:

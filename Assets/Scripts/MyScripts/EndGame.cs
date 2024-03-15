@@ -6,7 +6,8 @@ public class EndGame : MonoBehaviour
 {
 
     [SerializeField] InputAction RetryButton;
-    [SerializeField] string retryScene = "Tutorial";
+    //[SerializeField] string retryScene = "Tutorial";
+    [SerializeField] string menuSceneName = "MainMenu";
 
     private void OnEnable()
     {
@@ -17,6 +18,7 @@ public class EndGame : MonoBehaviour
     {
         RetryButton.Disable();
     }
+ 
 
     // Update is called once per frame
     void Update()
@@ -26,12 +28,12 @@ public class EndGame : MonoBehaviour
             Debug.Log("tried to quit");
             Application.Quit();
         }
-        if(RetryButton!=null)
-        if (RetryButton.ReadValue<float>() > 0) 
-        {
-            SceneManager.LoadScene(retryScene);    // Input can either be a serial number or a name; here we use name.
+        // if(RetryButton!=null)
+        // if (RetryButton.ReadValue<float>() > 0) 
+        // {
+        //     SceneManager.LoadScene(retryScene);    // Input can either be a serial number or a name; here we use name.
 
-        }
+        // }
     }
 
     public void QuitGame()
@@ -41,6 +43,6 @@ public class EndGame : MonoBehaviour
 
     public void RetryGame()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(menuSceneName);
     }
 }
